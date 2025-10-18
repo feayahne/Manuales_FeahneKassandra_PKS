@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="landingPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hero">
+        <nav class="nav">
+            <div class="nav-left">
+                <img id="logo" src="images/logo.png" alt="hotel-logo">
+                <h1>Luxury Hotel</h1>
+            </div>
+            <div class="nav-right">
+                <p id="login"><a href="login.html">Log in</a></p>
+            </div>
+        </nav>
+        <div id="hero-image">
+            <h1>Where Luxury Feels Like Home.</h1>
+        </div>
+    </div>
+    <div id="food-carousel-section">
+        <h2>Our Delicious Foods</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="prevSlide('food-carousel')">&#10094;</button>
+            <div class="carousel" id="food-carousel">
+                <div class="carousel-item"><img src="images/lp-3.avif" alt="Food 1"></div>
+                <div class="carousel-item"><img src="images/lp-5.webp" alt="Food 2"></div>
+                <div class="carousel-item"><img src="images/lp-4.avif" alt="Food 3"></div>
+                <div class="carousel-item"><img src="images/lp-6.jpg" alt="Food 4"></div>
+            </div>
+            <button class="carousel-button next" onclick="nextSlide('food-carousel')">&#10095;</button>
+        </div>
+    </div>
+    <div id="cafeteria-section">
+        <div class="ameneties">
+            <h2 >Ameneties</h2>
+            <br>
+        </div>
+        <h2>The Cafeteria</h2>
+        <img id="cafeteria-img" src="images/lp-2.jpg" alt="Cafeteria">
+        <h2>Swimming Pool</h2>
+        <img id="cafeteria-img" src="images/lp-7.avif" alt="Swimming Pool">
+        <h2>Recreation Center</h2>
+        <img id="cafeteria-img" src="images/lp-8.jpg" alt="Recreation Center">
+    </div>
+    <div id="rooms-carousel-section">
+        <h2>Rooms</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="prevSlide('rooms-carousel')">&#10094;</button>
+            <div class="carousel" id="rooms-carousel">
+                <div class="carousel-item"><img src="images/room-pic.jpg" alt="Room 1"></div>
+                <div class="carousel-item"><img src="images/room-pic-double.jpg" alt="Room 2"></div>
+                <div class="carousel-item"><img src="images/room-pic-deluxe.jpg" alt="Room 3"></div>
+            </div>
+            <button class="carousel-button next" onclick="nextSlide('rooms-carousel')">&#10095;</button>
+        </div>
+    </div>
+    <script src="landingPage.js"></script>
+</body>
+</html>

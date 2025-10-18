@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <div class="nav-item"><a href="dashboard.html">Dashboard</a></div>
+            <div class="nav-item"><a href="booking.html">Booking</a></div>
+            <div class="nav-item"><a href="checkin.html">Check in</a></div>
+            <div class="nav-item"><a href="checkout.html">Check out</a></div>
+            <div class="nav-item"><a href="about.html">About us</a></div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item"><a href="landingPage.html">Log out</a></div>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Welcome <span class="guest-name" id="guestName">Guest</span></h1>
+        <a href="booking.html" id="new-booking">+ Create new Booking</a>
+    </div>
+    <div class="grid-container">
+        <div class="box left">
+            <div class="left-content">
+                <div class="imgcontainer">
+                    <h1>Current Booking</h1>
+                    <img id="currentBookingImage" src="images/Icon.png" alt="Current Booking Image">
+                </div>
+                <div class="booking-details">
+                    <h2 class="guest-name guessname" id="booking-details-guest">Guest name</h2>
+                    <p class="result orderID">Booking ID: <span id="bookingId">_</span></p>
+                    <p class="result checkin">Check in: <span id="checkInDate">_</span></p>
+                    <p class="result">Check out: <span id="checkOutDate">_</span></p>
+                    <p class="result">No. of Guests: <span id="numberGuests">_</span></p>
+                    <p class="result">Room type: <span id="roomType">_</span></p>
+                    <p class="result duedate">Due out - date: <span id="dueDate">_</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="box right">
+            <h2 class="booking-summary">Booking Summary</h2>
+            <div class="room-summary">
+                <p>Room total: <span id="roomTotal">_</span></p>
+                <p>No. of Guests: <span id="summaryNumberGuests">_</span></p>
+                <p>Total: <span id="total">_</span></p>
+            </div>
+        </div>
+        <div class="box bottom">
+            <div class="box-bottom-content">
+                <h2>Booking History</h2>
+                <div class="book-history label">
+                    <p>Order ID</p> <p>Order Date</p> <p>Room</p> <p>No. of Room</p> <p>Check in</p> <p>Check out</p> <p>Guest</p>
+                </div>
+                <div class="book-history items">
+                    <p id="historyOrderId">_</p> <p id="historyOrderDate">_</p> <p id="historyRoom">_</p> <p id="historyNumberRoom">_</p> <p id="historyCheckIn">_</p> <p id="historyCheckOut">_</p> <p id="historyGuest">_</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 All rights reserved</p>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

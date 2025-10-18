@@ -1,0 +1,175 @@
+body {
+    font-size: 16px;
+    background-color: #F4EAE0; /* Light beige */
+    font-family: 'Arial';
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+    min-height: 100vh; /* Ensure body takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/* This is for the navigation bar */
+
+.nav {
+    z-index: 1; /* Ensure navigation bar stays on top */
+    height: 60px;
+    font-size: 1.5em; /* Adjust font size for better spacing */
+    display: flex;
+    justify-content: space-between; 
+    background-color: #000000;
+    align-items: center;
+    padding: 0 1em;
+    width: 100%; /* Make navigation bar full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #FAF6F0;
+    padding: 0 1em;
+    transition: transform 0.3s ease; 
+}
+
+.nav-item a:hover {
+    color: #ffeed4;
+    transform: scale(1.1); 
+}
+
+.nav-item a:active {
+    color: #ffffff;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+/* This is for the payment form */
+
+.wrapper{
+    margin-top: -6em;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* check out the box-container class */
+
+.box-container{
+    width: 400px;
+    padding: 2em;
+    background-color: #FAF6F0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+
+.check-out-summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 1em; /* Add gap between grid items */
+}
+
+.check-out{
+    grid-column: span 2; 
+}
+
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0 0.5em 0;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+/*this is for the booking details*/
+
+.booking-details-wrapper{
+    width: 400px;
+    padding: 2em;
+    background-color: #FAF6F0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    margin-right: 5em;
+
+}
+
+.booking-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, auto);
+    gap: 1em; /* Add gap between grid items */
+}
+
+.booking-details h2{
+    grid-column: span 2;
+}
+
+.total{
+    padding-top: 1em;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.1em; /* Adjust margin to ensure form stays below the boxes */
+    flex-wrap: wrap; /* Allow form to wrap on smaller screens */
+}
+
+button {
+    margin: -4em 2em 0 2em; 
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #FAF6F0;
+    cursor: pointer;
+    flex: 1 1 auto; /* Allow buttons to resize and wrap */
+    max-width: 200px; /* Ensure buttons don't get too wide */
+}
+
+button:hover {
+    background-color: #FAF6F0;
+    color: #000000;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+/* Footer styling */
+.footer {
+    background-color: #000000; /* Blue */
+    color: #FAF6F0;
+    text-align: center;
+    padding: 1em 0;
+    margin: 20px 0 0 0;
+    width: 100%; /* Ensure footer spans full width */
+    bottom: 0; /* Align footer to the bottom */
+}

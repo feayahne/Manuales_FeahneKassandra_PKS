@@ -1,0 +1,3 @@
+Received bookingId: 'BID665051', guestName: 'Emeterio'
+Number of rows found: 2
+Executed query: SELECT * FROM bookings WHERE bookingID = 'BID665051' AND guestName = 'Emeterio'

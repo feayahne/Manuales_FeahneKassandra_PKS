@@ -1,0 +1,144 @@
+body {
+    font-size: 16px;
+    background-color: #F7F0EA;
+    background-size: cover;
+    font-family: 'Arial';
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+    min-height: 100vh; /* Ensure body takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* This is for the navigation bar */
+.nav {
+    z-index: 3;
+    position: fixed;
+    height: 60px;
+    font-size: 1.5em; /* Adjust font size for better spacing */
+    display: flex;
+    justify-content: space-between; 
+    background-color: #000000; /*-- #FAF6F0 --*/
+    align-items: center;
+    padding: 0 1em;
+    width: 100%; /* Make navigation bar full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #FAF6F0;
+    padding: 0 1em;
+    transition: transform 0.3s ease; 
+}
+
+.nav-item a:hover {
+    color: #ffeed4;
+    transform: scale(1.1); 
+}
+
+.nav-item a:active {
+    color: #ffffff;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+
+/*ABOUT US */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    width: 1000px;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 56px;
+}
+
+img{
+    width: 960px;
+}
+
+#secnd-image{
+    margin-left: 30%;
+}
+
+
+/*TEAM SECTION*/
+
+.heading{
+    text-align: center;
+}
+
+#team-section{
+    background-color: #000000;
+    color:#F7F0EA;
+    font-family:'Times New Roman', Times, serif;
+    height: 650px;
+}
+
+
+#members{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.member-pic{
+    border: 1px solid #F7F0EA;
+    width: 200px;
+}
+
+#text-container-inner{
+    transform: translate(250px,0);   
+}
+
+
+#softwares-section{
+    color:#F7F0EA;
+    font-family:'Times New Roman', Times, serif;
+    height: 300px;
+    background: linear-gradient(black, #1d1d1d);
+}
+
+#softwares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+}
+
+
+
+#softwares img{
+    width: 100px;
+    margin: 10px;
+}

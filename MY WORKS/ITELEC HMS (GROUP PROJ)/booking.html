@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="nav-left">
+                <div class="nav-item"><a href="dashboard.html">Dashboard</a></div>
+                <div class="nav-item"><a href="booking.html">Booking</a></div>
+                <div class="nav-item"><a href="checkin.html">Check in</a></div>
+                <div class="nav-item"><a href="checkout.html">Check out</a></div>
+                <div class="nav-item"><a href="about.html">About us</a></div>
+            </div>
+            <div class="nav-right">
+                <div class="nav-item"><a href="landingPage.html">Log out</a></div>
+            </div>
+        </div>
+        <div class="search">
+            <select name="roomtype" id="roomtype">
+                <option value="">Select Room Type</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="deluxe">Deluxe</option>
+              </select>
+            <input type="number" placeholder="Min price" id="min" min="0">
+            <input type="number" placeholder="Max price" id="max" min="0">
+            <button onclick="displayRoom()">Search</button>
+        </div>
+        <h2 class="h2-available-rooms">Available rooms</h2>
+        <div class="img-container">
+            <div class="rooms">  <!--Add rooms if you'd Like ^^ -->
+
+                <!--For the rooms of Single-->
+                    
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 1', 'Single')">
+                    <div class="room"><img src="images/room-pic.jpg" alt="single" data-price="1000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 2', 'Single')">
+                    <div class="room"><img src="images/room-pic.jpg" alt="single" data-price="1000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 3', 'Single')">
+                    <div class="room"><img src="images/room-pic.jpg" alt="single" data-price="1000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 4', 'Single')">
+                    <div class="room"><img src="images/room-pic.jpg" alt="single" data-price="1000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 5', 'Single')">
+                    <div class="room"><img src="images/room-pic.jpg" alt="single" data-price="1000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 5', 'Single')">
+                    <div class="room"><img src="images/room-pic.jpg" alt="single" data-price="1000"></div>
+                </a>
+                
+                <!--For the rooms of Double-->
+                
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 6', 'Double')">
+                <div class="room"><img src="images/room-pic-double.jpg" alt="double" data-price="2000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 7', 'Double')">
+                <div class="room"><img src="images/room-pic-double.jpg" alt="double" data-price="2000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 8', 'Double')">
+                <div class="room"><img src="images/room-pic-double.jpg" alt="double" data-price="2000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 9', 'Double')">
+                <div class="room"><img src="images/room-pic-double.jpg" alt="double" data-price="2000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 10', 'Double')">
+                <div class="room"><img src="images/room-pic-double.jpg" alt="double" data-price="2000"></div>
+                </a>
+                <a href="#" onclick="navigateToDetails('images/room-pic.jpg', 'Room 11', 'Double')">
+                <div class="room"><img src="images/room-pic-double.jpg" alt="double" data-price="2000"></div>
+                </a>
+                
+                <!--For the rooms of Deluxe-->
+                
+                <a href="#" onclick="navigateToDetails('images/room-pic-deluxe.jpg', 'Room 13', 'Deluxe')">
+                <div class="room"><img src="images/room-pic-deluxe.jpg" alt="deluxe" data-price="3500"></div>
+                </a>    
+                <a href="#" onclick="navigateToDetails('images/room-pic-deluxe.jpg', 'Room 13', 'Deluxe')">
+                <div class="room"><img src="images/room-pic-deluxe.jpg" alt="deluxe" data-price="3500"></div>
+                </a>    
+                <a href="#" onclick="navigateToDetails('images/room-pic-deluxe.jpg', 'Room 13', 'Deluxe')">
+                <div class="room"><img src="images/room-pic-deluxe.jpg" alt="deluxe" data-price="3500"></div>
+                </a>    
+                <a href="#" onclick="navigateToDetails('images/room-pic-deluxe.jpg', 'Room 13', 'Deluxe')">
+                <div class="room"><img src="images/room-pic-deluxe.jpg" alt="deluxe" data-price="3500"></div>
+                </a>    
+                <a href="#" onclick="navigateToDetails('images/room-pic-deluxe.jpg', 'Room 13', 'Deluxe')">
+                <div class="room"><img src="images/room-pic-deluxe.jpg" alt="deluxe" data-price="3500"></div>
+                </a>    
+                <a href="#" onclick="navigateToDetails('images/room-pic-deluxe.jpg', 'Room 13', 'Deluxe')">
+                <div class="room"><img src="images/room-pic-deluxe.jpg" alt="deluxe" data-price="3500"></div>
+                </a>    
+                
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2024 All rights reserved</p>
+        </div>
+    </div>
+    <script src="booking.js"></script>
+</body>
+</html>

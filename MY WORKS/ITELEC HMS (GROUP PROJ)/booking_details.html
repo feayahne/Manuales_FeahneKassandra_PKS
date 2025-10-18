@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="booking_details.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <div class="nav-item"><a href="dashboard.html">Dashboard</a></div>
+            <div class="nav-item"><a href="booking.html">Booking</a></div>
+            <div class="nav-item"><a href="checkin.html">Check in</a></div>
+            <div class="nav-item"><a href="checkout.html">Check out</a></div>
+            <div class="nav-item"><a href="about.html">About us</a></div>
+
+        </div>
+        <div class="nav-right">
+            <div class="nav-item"><a href="landingPage.html">Log out</a></div>
+        </div>
+    </div>
+    <div class="wrapp">
+        <div class="wrapper">
+            <div class="content">
+                <img id="room-image" src="images/room-pic.jpg" alt="">
+                <div class="details">
+                    <div class="room-number-type">
+                        <h1 id="room-price"><strong>Price: $0</strong></h1>
+                        <h2 id="room-number">Room number</h2>
+                        <h2 id="room-type">Room type</h2>
+                    </div>
+                    <form id="bookingForm" action="save_booking.php" method="POST">
+                        <label for="guest-name">Guest Name<input type="text" id="guest-name" name="guestName" required></label>
+                        <label for="number-Guests">Number of Guests:<input type="number" id="number-Guests" name="numberGuests" min="1" required></label>
+                        <label for="Check-in">Check-in date:<input type="date" id="Check-in" name="checkInDate" required></label>
+                        <label for="Check-out">Check-out date:<input type="date" id="Check-out" name="checkOutDate" required></label>
+                        <input type="hidden" id="room-number" name="roomNumber" value="101">
+                        <input type="hidden" id="room-type" name="roomType" value="Deluxe">
+                        <input type="hidden" id="price" name="price" value="200">
+                        <button type="submit" id="book">Book</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2024 All rights reserved</p>
+        </div>
+    </div>
+    <script src="booking_details.js"></script>
+</body>
+</html>

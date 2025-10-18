@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <div class="nav-item"><a href="dashboard.html">Dashboard</a></div>
+            <div class="nav-item"><a href="booking.html">Booking</a></div>
+            <div class="nav-item"><a href="checkin.html">Check in</a></div>
+            <div class="nav-item"><a href="checkout.html">Check out</a></div>
+            <div class="nav-item"><a href="about.html">About us</a></div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item"><a href="landingPage.html">Log out</a></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Check Out</h1>
+        <div class="booking-summary">
+            <p>Guest Name: <span id="guestName"></span></p>
+            <p>Number of Guests: <span id="numberGuests"></span></p>
+            <p>Check-in Date: <span id="checkInDate"></span></p>
+            <p>Check-out Date: <span id="checkOutDate"></span></p>
+            <p>Room Number: <span id="roomNumber"></span></p>
+            <p>Room Type: <span id="roomType"></span></p>
+            <p>Room Price: <span id="totalPrice"></span></p>
+        </div>
+        <button id="confirmCheckout">Confirm Check Out</button>
+    </div>
+    
+    <script src="checkout.js"></script>
+</body>
+</html>

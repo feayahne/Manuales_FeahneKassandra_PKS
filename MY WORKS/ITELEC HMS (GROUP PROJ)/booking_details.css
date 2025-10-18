@@ -1,0 +1,173 @@
+body {
+    font-size: 16px;
+    background-color: #F4EAE0; /* Light beige */
+    font-family: 'Arial';
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+    height: 100vh; /* Ensure body takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+/* This is for the navigation bar */
+
+.nav {
+    height: 60px;
+    font-size: 1.5em; /* Adjust font size for better spacing */
+    display: flex;
+    justify-content: space-between; 
+    background-color: #000000;
+    align-items: center;
+    padding: 0 1em;
+    width: 100%; /* Make navigation bar full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #FAF6F0;
+    padding: 0 1em;
+    transition: transform 0.3s ease; 
+}
+
+.nav-item a:hover {
+    color: #ffeed4;
+    transform: scale(1.1); 
+}
+
+.nav-item a:active {
+    color: #ffffff;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+.wrapp{
+    margin: 5% 0 0 0;
+}
+
+.content{
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4EAE0 ; /* Light beige */
+    padding: 1em;
+    
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+/* This is for the form */
+
+form {
+    display: block;
+    align-items: center;
+    background-color: #F4EAE0 ; /* Light beige */
+    padding: 1em;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+
+/* This is for the form labels */
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin: 0.5em;
+}
+
+/* This is for the form input fields */
+
+input {
+    width: 80%;
+    font-size: 1.2em;
+    margin: 10px auto 1em auto;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #000000 ;
+}
+
+
+/* This is for the book buttons */
+
+#book{
+    font-size: 2em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #000000 ;
+    background-color: #000000 ;
+    color: #FAF6F0 ;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.room-number-type{
+    padding: 1em;
+    border-radius: 10px;
+    margin: 0 0 -10px 0;
+}
+
+.details{
+    justify-content: center;
+    align-items: center;
+    background-color: #FAF6F0  ; /* Light beige */
+    padding: 1em;
+    border-radius: 10px;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+img {
+    min-width: 300px;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 5em;
+}
+
+
+
+/* This is for the footer */
+
+.footer {
+    background-color: #000000; /* Blue */
+    color: #FAF6F0;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%; /* Ensure footer spans full width */
+    position: absolute; /* Position footer at the bottom */
+    bottom: 0; /* Align footer to the bottom */
+}
+

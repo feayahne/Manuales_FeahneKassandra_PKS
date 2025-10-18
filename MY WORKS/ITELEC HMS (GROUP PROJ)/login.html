@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="image-box">
+            <img src="images/loginBg1.jpg" alt="Description">
+        </div>
+        <div class="container">
+            <form id="loginForm">
+                <h1>Log in to your account</h1>
+                <div class="input">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div id="rememberMe">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <div id="forgotPassword">
+                    <a href="ForgotPassword.html">Forgot Password?</a>
+                </div>
+                <button class="login" type="submit">Login</button>
+                <div class="social-login">
+                    <p>Or login with:</p>
+                    <button class="social-btn facebook" type="button" onclick="facebookLogin()" >Facebook</button>
+                    <button class="social-btn google" type="button" id="google">Google</button>
+                </div>
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="SignUp.html">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Load the Facebook SDK -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <!-- Load the Google API library -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="fb.js"></script>
+    <script src="login.js" defer type="module"></script>
+</body>
+</html>

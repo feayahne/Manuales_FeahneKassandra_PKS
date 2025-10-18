@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check In</title>
+    <link rel="stylesheet" href="checkin.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">  
+            <div class="nav-item"><a href="dashboard.html">Dashboard</a></div>
+            <div class="nav-item"><a href="booking.html">Booking</a></div>
+            <div class="nav-item"><a href="checkin.html">Check in</a></div>
+            <div class="nav-item"><a href="checkout.html">Check out</a></div>
+            <div class="nav-item"><a href="about.html">About us</a></div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item"><a href="landingPage.html">Log out</a></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Check In</h1>
+        <form id="checkinForm">
+            <div class="input-group">
+                <label for="bookingId">Booking ID</label>
+                <input type="text" id="bookingId" name="bookingId" required>
+            </div>
+            <div class="input-group">
+                <label for="guestName">Guest Name</label>
+                <input type="text" id="guestName" name="guestName" required>
+            </div>
+            <button type="submit">Check In</button>
+        </form>
+    </div>
+    <script src="checkin.js"></script>
+</body>
+</html>
